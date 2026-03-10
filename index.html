@@ -6,6 +6,7 @@
   <title>Nazian Payad | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -110,15 +111,38 @@
     <div class="inner">
       <p class="text">GET IN TOUCH</p>
       <h2 class="text-title">Contact Me</h2>
-      <form class="contact-form">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>nazianpayad@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>09397772943</p>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Maitim II, Central, Tagaytay City</p>
+          </div>
+
+          <h3 class="sub-text">Connect with me:</h3>
+          <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
         </div>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn-contact">Send Message</button>
-        <!-- Add Socials -->
-      </form>
+      
+        <form class="contact-form" action="https://formsubmit.co/nazianpayad@gmail.com" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn-contact">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
