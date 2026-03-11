@@ -253,12 +253,58 @@ section {
 
 
 /* CONTACT */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: black;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.25rem;
+    color: orangered;
+}
+
+.socials {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    color: navy;
+}
+
+.socials i:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.sub-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    font-family: serif;
+    margin-top: 1rem;
+}
+
 .contact-form {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 620px;  
+    max-width: 620px;
+    margin-right: 10rem;
 }
 
 .form-row {
@@ -290,7 +336,6 @@ section {
 }
 
 .contact-form .btn-contact {
-    align-self: flex-start;
     border: none;
 }
 
