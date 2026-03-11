@@ -365,6 +365,10 @@ footer span {
         padding: 12px 20px;
     }
 
+    .logo {
+        font-size: 1.25rem;
+    }
+
     #home {
         flex-direction: column;
         text-align: center;
@@ -376,6 +380,11 @@ footer span {
     .home-image img {
         width: 250px;
         height: 250px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
     }
 
     /* CONTACT PHONE */
