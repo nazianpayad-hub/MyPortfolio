@@ -72,6 +72,12 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 24px;
+}
+
 /* SECTIONS */
 
 section {
@@ -292,7 +298,7 @@ section {
 }
 
 .sub-text {
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 1.5rem);
     font-weight: 500;
     color: black;
     font-family: serif;
@@ -351,4 +357,65 @@ footer {
 
 footer span {
     color: rgb(172, 83, 51);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image {
+        order: -1;
+    }
+    .home-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* CONTACT PHONE */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        margin: 0;
+    }
+
+    .sub-text, .socials{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    /*hamburger menu*/
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 200px;
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active {
+        display: block;
+    }
+
 }
