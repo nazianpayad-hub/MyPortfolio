@@ -113,7 +113,7 @@
               <span>JavaScript</span>
           </div>
           <div class="buttons">
-              <a href="#" class="btn">View Code</a>
+              <a href="https://github.com/nazianpayad-hub/MyPortfolio" target="_blank" class="btn">View Code</a>
           </div>
         </div>
         <div class="projects-card">
@@ -126,26 +126,47 @@
               <span>JavaScript</span>
             </div>
             <div class="buttons">
-              <a href="#" class="btn">Live Demo</a>
-              <a href="#" class="btn">View Code</a>
+              <a href="https://nazianpayad-hub.github.io/To-Do-List/" target="_blank" class="btn">Live Demo</a>
+              <a href="https://github.com/nazianpayad-hub/To-Do-List" target="_blank" class="btn">View Code</a>
             </div>
         </div>
         <div class="projects-card">
           <img src="assets/CODPK.png" alt="Capstone UI" class="project-img">
-            <h3>C.O.D.P.K. User Interface</h3>
+            <h3>CODPK V2 User Interface</h3>
             <p>Images from my capstone project showcasing the UI design.</p>
             <div class="tools">
               <span>Adobe Photoshop</span>
               <span>Canva</span>
             </div>
             <div class="buttons">
-              <a href="#" class="btn">View Images</a>
+              <button onclick="openModal()" class="btn">View Images</a>
+            </div>
+            <!-- Modal -->
+            <div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+                <div class="modal-box">
+                    <button class="modal-close" onclick="closeModal()">&#10005;</button>
+                    <p class="modal-title">CODPK— Images</p>
+                    <div class="img-grid">
+                        <img src="assets/CODPK.png" alt="Images">
+                        <img src="assets/imagesModal/printSummary.png" alt="Images 1">
+                        <img src="assets/imagesModal/filePreview.png" alt="Images 2">
+                        <img src="assets/imagesModal/systemAdmin.png" alt="Images 3">
+                        <img src="assets/imagesModal/uploadFile.png" alt="Images 4">
+                        <img src="assets/imagesModal/WarningPage.gif" alt="Images 5">
+                        <img src="assets/imagesModal/tyPage.gif" alt="Images 6">
+                        <img src="assets/imagesModal/doneBtn.png" alt="Images 7">
+                        <img src="assets/imagesModal/backBtn.png" alt="Images 8">
+                        <img src="assets/imagesModal/loginBtn.png" alt="Images 9">
+                        <img src="assets/imagesModal/cancelBtn.png" alt="Images 10">
+                        <img src="assets/imagesModal/settingsBtn.png" alt="Images 11">
+                    </div>
+                </div>
             </div>
         </div>
-        
       </div>
     </div>
   </section>
+
 
   <!-- CONTACT -->
   <section id="contact"> 
