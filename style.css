@@ -38,6 +38,10 @@ header {
     text-decoration: none;
 }
 
+nav {
+    transition: all 0.3s ease;
+}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -91,10 +95,7 @@ section {
 /* HOME */
 
 #home {
-    height: 100vh;
-    display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .home-text {
@@ -300,12 +301,6 @@ section {
     display: inline-block;
     border-radius: 20px;
     font-size: 12px;
-}
-
-.buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .btn {
